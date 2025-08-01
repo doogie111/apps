@@ -1,0 +1,21 @@
+
+export const currencyData = {
+  USD: { name: '미국 달러', emoji: '🇺🇸' },
+  KRW: { name: '대한민국 원', emoji: '🇰🇷' },
+  JPY: { name: '일본 엔', emoji: '🇯🇵' },
+  EUR: { name: '유로', emoji: '🇪🇺' },
+  CNY: { name: '중국 위안', emoji: '🇨🇳' },
+  GBP: { name: '영국 파운드', emoji: '🇬🇧' },
+  AUD: { name: '호주 달러', emoji: '🇦🇺' },
+  CAD: { name: '캐나다 달러', emoji: '🇨🇦' },
+  CHF: { name: '스위스 프랑', emoji: '🇨🇭' },
+  HKD: { name: '홍콩 달러', emoji: '🇭🇰' },
+  SGD: { name: '싱가포르 달러', emoji: '🇸🇬' },
+  THB: { name: '태국 바트', emoji: '🇹🇭' },
+  VND: { name: '베트남 동', emoji: '🇻🇳' },
+  TWD: { name: '신 타이완 달러', emoji: '🇹🇼' },
+  PHP: { name: '필리핀 페소', emoji: '🇵🇭' },
+  IDR: { name: '인도네시아 루피아', emoji: '🇮🇩' },
+  MYR: { name: '말레이시아 링깃', emoji: '🇲🇾' },
+  NZD: { name: '뉴질랜드 달러', emoji: '🇳🇿' },
+};
