@@ -3,14 +3,17 @@ import React, { useState } from 'react';
 import Calculator from './Calculator';
 import JumpGame from './JumpGame';
 import CurrencyConverter from './CurrencyConverter';
-import UnitConverter from './UnitConverter'; // Import the new component
+import UnitConverter from './UnitConverter';
+import HomePage from './HomePage'; // Import the new HomePage component
 import './App.css';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('electricity'); // 'electricity', 'currency', 'unit', or 'game'
+  const [currentPage, setCurrentPage] = useState('home'); // Set default page to 'home'
 
   const renderPage = () => {
     switch (currentPage) {
+      case 'home':
+        return <HomePage />;
       case 'electricity':
         return <Calculator />;
       case 'currency':
@@ -20,7 +23,7 @@ function App() {
       case 'game':
         return <JumpGame />;
       default:
-        return <Calculator />;
+        return <HomePage />;
     }
   };
 
@@ -34,6 +37,15 @@ function App() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
+              <li className="nav-item">
+                <a 
+                  className={`nav-link ${currentPage === 'home' ? 'active' : ''}`}
+                  href="#"
+                  onClick={() => setCurrentPage('home')}
+                >
+                  메인
+                </a>
+              </li>
               <li className="nav-item dropdown">
                 <a 
                   className="nav-link dropdown-toggle" 
